@@ -92,7 +92,7 @@ const pokemonStats = stats => {
 const notFound = () => {
   pokeName.textContent = 'Not Found';
     pokeImg.setAttribute('src', '/img/poke-shadow.png');
-    pokeImg.style.background =  'rgba(44, 44, 44, 0.815)ff';
+    pokeImg.style.background =  'rgba(44, 44, 44, 0.815)';
     pokeTypes.innerHTML = '';
     pokeStats.innerHTML = '';
     pokeId.textContent = '';  
