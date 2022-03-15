@@ -129,7 +129,7 @@ body {
   height: 13rem;
   width: 15rem;
   border-radius: 1rem;
-  background-color: rgb(80, 80, 80);
+  background-color: rgba(44, 44, 44, 0.815);
 }
 .pokemon-stats {
   display: flex;
