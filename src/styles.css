@@ -18,6 +18,19 @@
   --black: #242424;
 }
 
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    background-color: var(--cyan);
+  }
+
+  25%,
+  75% {
+    background-color: #242424;
+  }
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -25,6 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: GameBoy;
+  background-image: url(/img/wallpaper.jpg);
 }
 
 .functional {
@@ -34,6 +48,8 @@ body {
   justify-content: space-between;
   align-items: center;
   border: solid 3px var(--black);
+  width: 60vw;
+  height: 100vh;
 }
 .upper-lights {
   padding: 2rem;
@@ -49,10 +65,10 @@ body {
 .on-off {
   height: 5rem;
   width: 5rem;
-  background-color: var(--cyan);
   border-radius: 50%;
   display: inline-block;
   border: solid 3px var(--black);
+  animation: blink 3s ease 0s infinite normal forwards;
 }
 .failure {
   height: 2.5rem;
@@ -82,8 +98,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   background-color: var(--grey);
   border: solid 2px var(--black);
 }
@@ -96,12 +112,11 @@ body {
   background-color: rgb(52, 95, 52);
   border: solid 2px black;
   margin: 1.5rem;
-  padding: 4rem;
+  padding: 3rem;
   justify-content: space-between;
 }
 .inner-display .pokemon-name {
   font-size: 3rem;
-  margin-bottom: 3rem;
   opacity: 0;
 }
 .inner-display .pokemon {
@@ -109,8 +124,6 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-}
-.pokemon-image-container {
 }
 .pokemon-image {
   height: 13rem;
@@ -133,7 +146,6 @@ body {
   opacity: 0;
 }
 .pokemon-id {
-  margin-bottom: 1rem;
   font-size: 1.2rem;
   opacity: 0;
 }

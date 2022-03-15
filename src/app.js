@@ -18,6 +18,7 @@ const typeColors = {
   psychic: '#FFC6D9',
   ghost: '#561D25',
   bug: '#A2FAA3',
+  fairy:'#01fbfb',
   poison: '#795663',
   ground: '#D2B074',
   dragon: '#DA627D',
