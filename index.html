@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/styles.css">
+  <title>JS Pokedex</title>
+</head>
+<body>
+  <!-- POKEDEX DESIGN -->
+  <section class="functional">
+    <div class="upper-lights">
+      <span class="on-off"></span>
+      <span class="failure"></span>
+      <span class="working"></span>
+      <span class="success"></span>
+    </div>
+    <div class="display">
+      <div class="inner-display">
+        <span class="pokemon-name">None</span>
+        <div class="pokemon">
+          <div class="pokemon-image-container"><img class="pokemon-image" src="/img/poke-shadow.png" alt=""></div>
+          <div class="pokemon-stats">
+            <span class="pokemon-id">None</span>
+            <div class="pokemon-type">None</div>
+            <div class="stats-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="search-box" action="" onsubmit="searchPokemon(event)">
+      <input type="text" name="pokemon" autocomplete="off" placeholder="Search Pokemon:">
+      <input type="submit" value="">
+    </form>
+  </section>
+  
+  <script src="/src/app.js" defer></script>
+</body>
+</html>
