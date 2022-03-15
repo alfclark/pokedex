@@ -33,6 +33,7 @@ const searchPokemon = event => {
   fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
       .then(data => data.json())
       .then(response => renderPokemonData(response))
+      .catch(err => notFound())
 }
 
 
@@ -86,4 +87,13 @@ const pokemonStats = stats => {
     statElement.appendChild(statValue);
     pokeStats.appendChild(statElement);    
   })
+}
+
+const notFound = () => {
+  pokeName.textContent = 'Not Found';
+    pokeImg.setAttribute('src', '/img/poke-shadow.png');
+    pokeImg.style.background =  'rgba(44, 44, 44, 0.815)ff';
+    pokeTypes.innerHTML = '';
+    pokeStats.innerHTML = '';
+    pokeId.textContent = '';  
 }

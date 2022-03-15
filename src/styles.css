@@ -102,6 +102,7 @@ body {
   height: 90%;
   background-color: var(--grey);
   border: solid 2px var(--black);
+  padding: 0.7rem;
 }
 .inner-display {
   display: flex;
