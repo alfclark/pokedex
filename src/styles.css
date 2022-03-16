@@ -108,8 +108,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   background-color: rgb(52, 95, 52);
   border: solid 2px black;
   margin: 1.5rem;
@@ -124,6 +124,13 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+}
+.pokemon-image-container {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  margin-left: -1rem;
   align-items: center;
 }
 .pokemon-image {
@@ -184,4 +191,61 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: var(--green);
   transition: 0.3s;
+}
+
+/*-------RESPONSIVE---------------*/
+@media screen and (max-width: 900px) {
+  .functional {
+    width: 80vw;
+    height: 90vh;
+  }
+  .on-off {
+    height: 3rem;
+    width: 3rem;
+  }
+  .failure {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .working {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .success {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .display {
+    width: 90%;
+    height: 50%;
+  }
+  .inner-display {
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .inner-display .pokemon {
+    width: 100%;
+  }
+  .inner-display .pokemon-name {
+    font-size: 1.5rem;
+  }
+  .pokemon-image {
+    height: 7rem;
+    width: 7rem;
+  }
+  .pokemon-stats {
+    font-size: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .pokemon-type {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    border: dotted 5px;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    opacity: 0;
+  }
+  .pokemon-id {
+    font-size: 0.8rem;
+    opacity: 0;
+  }
 }
