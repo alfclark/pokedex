@@ -224,14 +224,15 @@ input[type="submit"]:hover {
     padding: 2rem;
   }
   .inner-display .pokemon {
-    width: 100%;
+    width: 70%;
+    margin-left: -5rem;
   }
   .inner-display .pokemon-name {
     font-size: 1.5rem;
   }
   .pokemon-image {
-    height: 7rem;
-    width: 7rem;
+    height: 5rem;
+    width: 5rem;
   }
   .pokemon-stats {
     font-size: 0.5rem;
@@ -253,7 +254,7 @@ input[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 500px) {
   .functional {
     width: 80vw;
     height: 90vh;
@@ -288,20 +289,8 @@ input[type="submit"]:hover {
   .inner-display .pokemon-name {
     font-size: 1.5rem;
   }
-  .pokemon-image {
-    height: 2rem;
-    width: 2rem;
-  }
-  .pokemon-stats {
-    font-size: 0.5rem;
-    margin-left: 0.5rem;
-  }
-  .pokemon-type {
-    margin-bottom: 0.5rem;
-    font-size: 0.5rem;
-    border: dotted 5px;
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    opacity: 0;
+  .pokemon {
+    padding-left: 2rem;
   }
   .pokemon-id {
     font-size: 0.5rem;
@@ -311,7 +300,7 @@ input[type="submit"]:hover {
     padding: 1rem;
   }
   input[type="submit"] {
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     width: 5rem;
   }
 }
