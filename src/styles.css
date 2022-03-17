@@ -289,8 +289,8 @@ input[type="submit"]:hover {
     font-size: 1.5rem;
   }
   .pokemon-image {
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
   }
   .pokemon-stats {
     font-size: 0.5rem;
@@ -309,5 +309,9 @@ input[type="submit"]:hover {
   }
   input[type="text"] {
     padding: 1rem;
+  }
+  input[type="submit"] {
+    padding: 1rem 3rem;
+    width: 5rem;
   }
 }
