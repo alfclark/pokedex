@@ -96,3 +96,5 @@ const notFound = () => {
   pokeStats.innerHTML = "";
   pokeId.textContent = "";
 };
+
+
